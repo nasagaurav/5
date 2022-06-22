@@ -1,0 +1,246 @@
+body {
+  margin: 0;
+}
+* {
+  text-decoration: none;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+}
+main .left {
+  width: 20%;
+  /* background: red; */
+  height: 100vh;
+}
+
+main .right {
+  width: 80%;
+  height: 100vh;
+  /* background: yellow; */
+  overflow: auto;
+}
+
+
+main .left
+{
+  font-size: 26px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+}
+main .left div
+{
+  padding: 10px;
+}
+main .left div a
+{
+  display: block;
+  color: black;
+  padding: 10px;
+}
+main .left div a:hover
+{
+  background: silver;
+}
+
+
+
+main .right header
+{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid silver;
+  background: silver;
+}
+main .right header .fa
+{
+  margin-left: 10px;
+}
+
+
+main .right .banner
+{
+  position: relative;
+}
+main .right .banner img
+{
+  width: 100%;
+}
+main .right .banner .banner-content
+{
+  /*background: red;*/
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 2%;
+  margin-top: 2%;
+  color: white;
+}
+main .right .banner .banner-content h1
+{
+  font-size: 400%;
+  letter-spacing: 10px;
+}
+main .right .banner .banner-content h2
+{
+  font-size: 200%;
+}
+main .right .banner .banner-content button
+{
+  font-size: 200%;
+  padding: 10px;
+  border: 0;
+  background: black;
+  color: white;
+}
+
+
+
+/*item starts*/
+main .right .products
+{
+
+}
+main .right .products .item-content
+{
+  width: 23%;
+  display: inline-table;
+  margin-right: 1.5%;
+  margin-bottom: 1.5%;
+}
+main .right .products .item-content .img-content
+{ 
+  position: relative;
+  /*background: red;*/
+}
+main .right .products .item-content .img-content img
+{
+  width: 100%;
+  filter: saturate(30%);
+}
+main .right .products .item-content .img-content .sale
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: black;
+   color: white; 
+   padding: 10px;
+}
+main .right .products .item-content .img-content .add-to-cart
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: black;
+  color: white;
+  display: flex;
+  padding: 8px;
+  opacity: 0;
+}
+main .right .products .item-content:hover .img-content .add-to-cart
+{
+  opacity: 1;
+
+}
+
+/*item ends*/
+
+
+main .right .subscribe
+{
+  background: black;
+  color: white;
+  padding: 10px;
+}
+main .right .subscribe input
+{
+  padding: 10px;
+  width: 100%;
+}
+main .right .subscribe button
+{
+  background: tomato;
+  color: white;
+  padding: 10px;
+  border: 0;
+  margin-top: 10px;
+}
+
+
+main .right .container
+{
+  background: silver;
+  padding: 10px;
+  display: flex;
+}
+main .right .container .item
+{
+  width: 30%;
+  padding: 10px;
+}
+main .right .container .item-contact
+{
+  text-align: center;
+}
+main .right .container .item-contact input
+{
+  padding: 10px;
+  border: 0;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+main .right .container .item-contact button
+{
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  background: black;
+  color: white;
+}
+main .right .container .item-about
+{
+  text-align: center;
+}
+main .right .container .item-about a
+{
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  font-size: 90%;
+  color: black;
+}
+main .right .container .item-store 
+{
+
+}
+main .right .container .item-store .line
+{
+  /*background: red;*/
+  display: flex;
+  margin-bottom: 10px;
+}
+main .right .container .item-store .line .l
+{
+  width: 10%;
+}
+main .right .container .item-store .line .r
+{
+
+}
+
+
+main footer
+{
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-transform: capitalize;
+}
